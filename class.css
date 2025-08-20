@@ -1,0 +1,19 @@
+
+        #Hello{
+            color: blue;
+            background-color: yellow;
+            
+            font-size: small;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 10px solid rgb(72, 0, 255);
+            
+
+        }
+        .OT{
+            color: aqua;
+            background-color: blueviolet;
+        }
