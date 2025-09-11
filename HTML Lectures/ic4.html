@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      fieldset{
+        background-color: burlywood;
+        border: 2px solid black;
+      }
+
+      legend{
+        background-color: beige;
+        border: 2px solid black;
+        font-weight: bolder;
+      }
+      h1{
+        padding: 25px;
+        text-align: center;  
+      }
+      section{
+        text-align: left;
+        margin-left: 10;
+
+      }
+      #fname{
+        margin-left: 48px;
+      }
+      #lname{
+        margin-left: 50px;
+      }
+      #dob{
+        margin-left: 30px;
+      }
+      #age{
+        margin-left: 90px;
+      }
+      #gender{
+        margin-left: 72px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+    <div>
+      <fieldset>
+        <legend>HTML FORM</legend>
+        <h1>Application Form</h1>
+        <br />
+        <br />
+        <section>
+        <label for="fname">First Name : </label>
+        <input type="text" name="fname" id="fname" required autofocus/>
+        <br />
+        <br />
+        <label for="lname">Last Name : </label>
+        <input type="text" name="lname" id="lname" required />
+        <br />
+        <br />
+        <label for="dob">Date Of Birth : </label>
+        <input type="date" name="dob" id="dob" required />
+        <br />
+        <br />
+        <label for="age">Age : </label>
+        <input type="number" name="age" id="age" min="1" max="100" required />
+        <br />
+        <br />
+        <label for="gender">Gender : </label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <br />
+        <br />
+        <label for="pos">Positions Available : </label>
+        <input type="radio" name="pos" id="Junior Developer"  />
+        <label for="pos">Junior Developer</label>
+        <input type="radio" name="pos" id="Mid-Level"  />
+        <label for="pos">Mid-Level Developer</label>
+        <input type="radio" name="pos" id="Senior Developer"  />
+        <label for="pos">Senior Developer</label>
+        <br />
+        <br />
+        <label for="programming-langs">Programming Languages : </label>
+        <input type="checkbox" name="java" id="java"  />
+        <label for="java">Java</label>
+        <input type="checkbox" name="javascript" id="javascript" />
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" name="python" id="python" />
+        <label for="python">Python</label>
+        <br />
+        <br />
+        <label for="password">Password : </label>
+        <input type="password" name="password" id="password" maxlength="12" required />
+        <br />
+        <br />
+        <label for="cfpassword">Coniform Password : </label>
+        <input type="password" name="cfpassword" id="cfpassword" maxlength="12" required />
+        <br>
+        <br>
+        <label for="zip">Your Zip Code : </label>
+        <input type="text" name="zip" id="zip" pattern="[0-9]{5}" title="Five Digit ZIP Code" placeholder="12345">
+        <br />
+        <br />
+        </section>
+        <input type="submit" value="Submit" /> 
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </div>
+    </form>
+  </body>
+</html>
