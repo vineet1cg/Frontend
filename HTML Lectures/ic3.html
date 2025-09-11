@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Form</title>
+  </head>
+  <body>
+    <form action="">
+      <h1>Form</h1>
+      <fieldset>
+        <legend>Personl Information</legend>
+        <label for="fname">Name : </label>
+        <input type="text" name="fname" id="fname" />
+        <br />
+        <br />
+        <label for="email">Email : </label>
+        <input type="email" name="email" id="email" />
+        <br />
+        <br />
+        <label for="age">Age : </label>
+        <input type="text" name="age" id="age" />
+        <br />
+        <br />
+        <label for="gender">Gender : </label>
+        <input type="radio" name="gender" id="male" />
+        <label for="female">Male</label>
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+        <br />
+        <br />
+        <label for="color">Select A color : </label>
+        <input type="color" name="color" id="color" />
+        <br />
+        <br />
+        <label for="date">Enter A Date : </label>
+        <input type="date" name="date" id="date" />
+        <br />
+        <br />
+        <label for="number">Enter A Number : </label>
+        <input type="number" name="number" id="number" min="1" max="100" />
+        <br />
+        <br />
+        <label for="dtl">Your Local Time : </label>
+        <input type="datetime-local" name="dtl" id="dtl" />
+        <br />
+        <br />
+        <label for="file-1">Enter Your Resume : </label>
+        <input type="file" name="file-1" id="file-1" />
+        <br />
+        <br />
+        <label for="mont">Joining Month : </label>
+        <input type="month" name="mont" id="mont" />
+        <br />
+        <br />
+        <label for="week">Enter The Week You Joined ; </label>
+        <input type="week" name="week" id="week" />
+        <br />
+        <br />
+        <input type="image" src="LWVaz.jpg" alt="" />
+        <br />
+        <br />
+        <label for="rng">Intensity : </label>
+        <input
+          type="range"
+          name="rng"
+          id="rng"
+          min="0"
+          max="100"
+          value="50"
+          oninput="output.value = this.value"
+        />
+        <output name="output">50</output>
+        <br />
+        <br />
+        <input
+          type="reset"
+          value="Reset"
+          style="border: 2px solid black; background-color: white"
+        />
+        <input
+          type="submit"
+          value="Submit"
+          style="border: 2px solid black; background-color: white"
+        />
+      </fieldset>
+    </form>
+  </body>
+</html>

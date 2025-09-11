@@ -1,0 +1,22 @@
+p {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        /* linking font from google fonts! */
+      }
+      #para1 {
+        background-color: yellow;
+      }
+      #para2 {
+        background-color: rgb(100, 109, 192);
+      }
+      #para3 {
+        background-color: rgba(66, 176, 86, 1);
+      }
+      .class1 {
+        background-color: #ab67bb;
+      }
+      #para4 {
+        background-color: hsl(0, 100%, 50%);
+      }
